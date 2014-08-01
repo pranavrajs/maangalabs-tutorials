@@ -1,0 +1,15 @@
+<html ng-app="employeeApp">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+  <script src="js/app/app.js"></script>
+</head>
+<body ng-controller="EmployeeController">
+  <ul>
+    <li ng-repeat="emp in empList">	
+      <p>{{emp.name}}</p>
+      <p>{{emp.empnum}}</p>
+      <p>{{emp.email}}</p>
+    </li>
+  </ul>
+</body>
+</html>
