@@ -1,0 +1,12 @@
+<table class="table table-striped">
+	<thead>
+		<th>Sl. No</th>
+		<th>Employee Name </th>
+		<th>Link to profile</th>
+	</thead>
+	<tr ng-repeat="emp in empList">
+	  <td class="active">{{$index+1}}</td>
+	  <td class="success">{{emp.name}}</td>
+	  <td class="info"><a href="#profile/{{emp.empnum}}">Click here</a></td>
+	</tr>
+</table>

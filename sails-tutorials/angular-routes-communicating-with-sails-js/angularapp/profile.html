@@ -1,0 +1,17 @@
+<table ng-show="!notFound" class="table table-striped">
+	<tr>
+	  <td><strong>Name : </strong></td>
+	  <td>{{employee.name}}</td>
+	</tr>
+	<tr>
+	  <td><strong>Employee Number : </strong></td>
+	  <td>{{employee.empnum}}</td>
+	</tr>
+	<tr>
+	  <td><strong>Email id : </strong></td>
+	  <td>{{employee.email}}</td>
+	</tr>
+</table>
+<div ng-show="notFound"  class = "alert alert-danger col-md-12">
+	Error !!! Employee not Found
+</div>
